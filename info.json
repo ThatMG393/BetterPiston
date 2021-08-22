@@ -1,0 +1,56 @@
+{
+	"name" : "Piston Mod",
+	"preview" : "textures/preview.jpg",
+	"version" : "3.1",
+	"author" : "Veka & OG",
+	"description" : "Real working Piston Block",
+
+	"simpleblocks" : [
+		{
+			"uuid" : "cb21d1da-ab93-4c13-8379-aeac9703ab6a",
+			"name" : "Piston Lever",
+			"description" : "Piston Lever Block. Place the Piston Body block wherever you want, then place the Suspension (Spring) on it, place the Piston Lever block on the top of everything and finally, set the Stiffness value to 1 (VERY IMPORTANT). You can set up the speed and distance values, using Text Sign, placed on the Piston Body block. After adjusting the Piston you can remove the Text Sign and the parameters will still be saved along with the map.
+
+Default Speed 1 Block per Second
+Default Distance 2 Blocks
+
+WARNING Piston may be laggy on the maximum Speed and Distance values.",
+			"icon" : "textures/Pi2.png",
+			"dif" : "textures/df.jpg",
+			"nor" : "",
+			"normScale" : 1,
+			"met" : "textures/Met.png",
+			"smoothness" : 0.5,
+			"mesh" : "meshes/piston2.obj",
+			"scale" : 0.5,
+     "script" : "scripts/lever.lua"
+		},
+		{
+			"uuid" : "c36ba9c8-e5ad-4c78-9c6b-7391fe46b66c",
+			"name" : "Piston Body",
+			"description" : "Piston Body block. Place this block wherever you want, then place the Suspension (Spring) on it, place the Piston Lever block on the top of everything and finally, set the Stiffness value to 1 (VERY IMPORTANT). You can set up the speed and distance values, using Text Sign, placed on the Piston Body block. After adjusting the Piston you can remove the Text Sign and the parameters will still be saved along with the map.
+
+Default Speed 1 Block per Second
+Default Distance 2 Blocks
+
+WARNING Piston may be laggy on the maximum Speed and Distance values.",
+			"icon" : "textures/Pi1.png",
+			"dif" : "textures/df.jpg",
+			"nor" : "",
+			"normScale" : 1,
+			"met" : "textures/Met.png",
+			"smoothness" : 0.5,
+			"mesh" : "meshes/piston.obj",
+			"scale" : 0.5,
+     "script" : "scripts/body.lua",
+     "connections" : [
+        {
+            "type" : "signalReceiver", 
+            "color" : "#D50000",
+            "connectionsLimit" : 1,
+            "relativePosition" : {"X":0, "Y":0, "Z":0}
+         }
+     ]
+		},
+	]
+}
